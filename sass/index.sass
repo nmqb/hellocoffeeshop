@@ -1,0 +1,317 @@
+
+/* Font Variables
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|News+Cycle)
+$HeadingFont: 'Amatic SC', cursive
+$BodyFont: 'News Cycle', sans-serif
+ 
+/* Color Variables 
+$darkgray: #434343
+$darkgrayop: rgba(73, 73, 73, 0.96)
+$white: #ffffff
+$blk: #000000
+$mustard: #e5af19
+$lightgray: #f2f2f2
+$lightblue: #B4CFEC
+$darkblue: #7f93a8
+
+/* Mixins
+@mixin flexboxc
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+@mixin flexboxr
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+/* Main Content
+body 
+  margin: 0
+  font-family: $BodyFont
+  color: $darkgray
+
+// ////////////////////////// NAV BAR ♡
+#navbar 
+  overflow: hidden
+  background-color: $lightgray
+  width: 100%
+  height: 33px
+  padding-top: 7px
+  font-weight: bold
+  font-size: 13px
+  text-transform: uppercase
+  text-align: center
+
+  a
+    padding-left: 55px
+    padding-right: 55px
+    color: $darkblue
+    text-decoration: none
+    font-family: $BodyFont
+    transition-duration: .5s
+  
+  a:hover 
+    background-color: $darkgray
+    color: $lightgray
+    letter-spacing: 3px
+    
+
+  // //////////////////////// MAIN HEADER ♡
+.mainheader
+  @include flexboxc
+  background: linear-gradient( rgba(211,211,211, 0), rgba(20,20,20, .5)), url(../images/1.jpg)
+  height: 500px
+  background-size: cover
+  background-position: 10% 55%
+  color: $darkgray
+
+.shoptitle
+  font: 125px $HeadingFont 
+  font-weight: bold
+
+.customHr 
+  width: 35%
+  font-size: .2px
+  color: rgba(0, 0, 0, 0)
+  line-height: 2px
+  background-color: #e5af19
+  margin-top: -6px
+  margin-bottom: 10px
+
+.shopdescription
+  font: 42px $HeadingFont 
+  
+  // //////////////////////// ABOUT SECTION ♡
+.about
+  @include flexboxc
+  height: 305px
+  background-color: $white
+  line-height: 35px
+
+h1
+  font: 28px $HeadingFont 
+  color: $mustard
+  margin: 0
+  padding: 0
+
+h2
+  font: 22px $HeadingFont 
+  color: $lightgray
+  font-weight: bold
+  text-transform: uppercase
+
+
+  // //////////////////////// THE COFFEE ♡
+.thecoffees
+  background-image: url(../images/beans.jpg)
+  height: 320px
+  background-size: cover
+  color: $white
+
+.coffeeselection 
+  display: grid
+  height: 300px
+  grid-template-columns: 1fr 1fr 1fr 
+  grid-template-rows: 1fr 1fr 
+  text-align: center
+  grid-gap: 8px 25px
+  padding-top: 16px
+  padding-left: 20%
+  padding-right: 20%
+  grid-template-areas: "Intro Intro Intro ." "coffees teas . ." ". . . ."
+
+.Intro 
+  grid-area: Intro
+  background: $darkgrayop
+  margin: 0
+  padding-bottom: 5px
+  padding-top: 5px
+  border-top-left-radius: 6px
+  border-top-right-radius: 6px
+
+.coffees 
+  grid-area: coffees
+  height: 210px
+  background: $darkgrayop
+  border-bottom-left-radius: 2px
+  
+  
+.teas 
+  grid-area: teas
+  background: $darkgrayop
+    
+.flavor 
+  grid-area: 2 / 3 / 3  / 4
+  background: $darkgrayop
+  border-bottom-right-radius: 2px
+
+ul 
+  list-style: none
+  margin: 0
+  padding: 0
+
+
+  // //////////////////////////// CAFE FEATURES ♡
+
+.cafefeatures
+  @include flexboxc
+  height: 320px
+  background-color: $white
+  line-height: 30px
+
+  // //////////////////////////// CAFE EVENTS ♡
+
+.cafeevents
+  @include flexboxr
+  height: 280px
+  background: linear-gradient(to bottom, $lightgray, $white)
+
+.bandimage
+  flex-basis: 50%
+  text-align: right
+  height: 95%
+  margin-right: 8px
+  border-right: 2px solid $white
+
+  img 
+    height: 100%
+    width: auto
+    border-radius: 3px
+
+.eventinfo
+  flex-basis: 50%
+  text-align: left
+  margin-left: 8px
+  height: 50%
+
+button
+  background-color: $mustard
+  text-align: center
+  font-family: $BodyFont
+  transition-duration: .5s
+  border: none
+  padding: 6px 15px
+  font-size: 12px
+  border-radius: 4px
+  margin: 4px 2px
+  cursor: pointer
+  
+  a
+    text-decoration: none
+    text-transform: uppercase
+    color: $darkgray
+
+button:hover 
+  background-color: $lightblue
+
+// //////////////////////////// NOW HIRING  ♡
+
+.nowhiring
+  height: 190px
+  margin-top: 7px
+  text-align: center
+  background-color: $lightblue
+
+.hiringtitle
+  font: 85px $HeadingFont 
+
+
+    // //////////////////////////// LOCATIONS  ♡
+.location
+  @include flexboxc
+  height: 300px
+  color: $lightgray
+  background: linear-gradient( rgba(20,20,20, 1), rgba(20,20,20, .4)), url(../images/coffecupspoon.jpe)
+  background-position: 78% 45%
+  background-size: 100%
+
+.cafelocation
+  display: grid
+  grid-template-columns: auto auto auto
+  padding: 10px
+  width: 70%
+
+.cafe 
+  text-align: center
+
+// //////////////////////////// CAFE PICTURES ♡
+
+
+.thepicturegrid
+  height: 350px
+  width: 80%
+  margin-left: 10%
+  margin-right: 10%
+  background-color: $white
+  display: grid
+  align-content: center
+  grid-template-columns: auto auto auto
+  grid-column-gap: 8px
+  
+
+  img
+      height: 300px
+      width: auto
+      max-width: 100%
+    
+
+// //////////////////////////// FOOTER, SOCIAL MEDIA LINKS ♡
+
+footer 
+  display: grid
+  grid-template-columns: auto auto
+  align-items: center
+  height: 45px
+  background-color: $lightgray
+  color: $blk
+  font-size: 13px
+
+.socialmedialinks
+  text-align: left
+  padding-left: 45%
+
+.footertext
+  text-align: right
+  padding-right: 43%
+
+
+.sticky 
+  position: fixed
+  top: 0
+  width: 100%
+
+// //////////////////////////// EVENTSPAGE & JOB OPPORTUNITIES♡
+
+.eventpage
+  display: grid
+  justify-items: center
+  align-items: center
+  grid-template-columns: 1fr 1fr
+  background: linear-gradient(to top, transparent 10%, $white), url(../images/woodgrain.jpg)
+  background-size: contain
+  height: 633px
+
+.ev
+  line-height: 30px
+  
+.evn
+  text-align: right
+  padding-right: 18px
+  border-right: 2px solid $white
+
+  img 
+    height: 595px
+    width: auto
+    border-top-right-radius: 4px
+
+.eventfooter
+    position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+
+  
