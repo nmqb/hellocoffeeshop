@@ -1,0 +1,241 @@
+@media (max-width: 800px) {
+    body {
+        height: 1024px;
+    }
+    .ev h1 {
+        color: #333333;
+        font-weight: bold;
+    }
+    #navbar { 
+        overflow: hidden;
+        width: 100%;
+        height: 26px;
+        padding-top: 2px;
+        font-size: 11px;
+    }
+    #navbar a {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .thepicturegrid {
+        height: 300px;
+    }
+
+    .thepicturegrid img {
+        height: 250px;
+    }
+    .eventpage {
+        display: inline;
+        text-align: center;
+    }
+    .ev {
+        line-height: normal;
+    }
+    .evn {
+        padding-right: normal;
+        text-align: center;
+        border-right: none;
+    }
+    .evn img {
+        height: 330px;
+    }
+    .ev .shoptitle {
+        font-size: 35px;
+    }
+    .ev h1 {
+        font-size: 22px;
+    }
+    .eventpage .customHr {
+        margin-left: 30%;
+        width: 40%;
+    }
+    .socialmedialinks {
+        padding-left: 25%
+    }
+    .footertext {
+        padding-right: 23%
+    }
+}
+
+@media (max-width: 768px) {
+        body {
+            height: 1024;
+        }
+}
+
+@media (max-width: 415px) {
+    body {
+        height: 736px;
+    }
+    .customHr {
+        width: 85%;
+    }
+    .shoptitle {
+        font-size: 55px;
+    }
+    .shopdescription {
+        font-size: 27px
+    }
+}
+
+@media (max-width: 411px) {
+    body {
+        height: 823px;
+    }
+    .customHr {
+        width: 85%;
+    }
+    .shoptitle {
+        font-size: 55px;
+    }
+    .shopdescription {
+        font-size: 27px
+    }
+}
+
+@media (max-width: 600px) {
+        #navbar a {
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+        .hiringtitle {
+            font-size: 45px;
+        }
+        .ev h1 {
+            color: #333333;
+            font-weight: bold;
+        }
+        .coffeeselection {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .cafelocation {
+            width: 85%;
+        }
+        .eventinfo {
+            height: 50%;
+            font-size: 12px;
+        }
+        .bandimage {
+            height: 60%;
+        }
+    }
+
+@media (max-width: 420px) {
+    body {
+        height: 620px;
+    }
+    
+    #navbar { 
+        height: 28px;
+        padding-top: 23;
+        font-size: 12px;
+    }
+    #navbar a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mainheader {
+        height: 400px;
+    }
+    .about, .cafefeatures {
+        height: 175px;
+        padding: 5px;
+        font-size: 11px;
+        line-height: normal;
+    }
+    .coffeeselection {
+        grid-gap: 2px 2px;
+        padding-top: 6px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .cafelocation {
+        width: 100%;
+    }
+    .cafelocation h2 {
+        font-size: 16px;
+    }
+    .thepicturegrid {
+        height: 175px;
+    }
+    .thepicturegrid img {
+        height: 160px;
+    }
+    .nowhiring {
+        height: 165px;
+    }
+    .cafeevents {
+        height: 240px;
+    }
+    .eventinfo {
+        height: 80%;
+        font-size: 12px;
+    }
+    .bandimage {
+        height: 60%;
+    }
+    .evn img {
+        height: 180px;
+    }
+    .socialmedialinks {
+        padding-left: 35%;
+    }
+    .footertext {
+        padding-right: 38%;
+    }
+    .ev h1 {
+        color: #333333;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 812px;
+    }
+    .customHr {
+        width: 85%;
+    }
+    .shoptitle {
+        font-size: 55px;
+    }
+    .shopdescription {
+        font-size: 27px
+    }
+    .about, .cafefeatures {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .Intro {
+        padding: 1px;
+        font-size: 15px;
+        padding-top: 8px;
+    }
+    .location {
+        font-size: 14px;
+        height: 250px;
+    }
+    .thepicturegrid {
+        height: 145px;
+    }
+    .thepicturegrid img {
+        height: 120px;
+    }
+    .socialmedialinks {
+        padding-left: 10%;
+    }
+    .footertext {
+        padding-right: 10%;
+    }
+    .socialmedialinks {
+        padding-left: 35%;
+    }
+    .footertext {
+        padding-right: 38%;
+    }
+    .ev h1 {
+        color: #333333;
+        font-weight: bold;
+    }
+}
